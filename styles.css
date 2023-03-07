@@ -1,6 +1,15 @@
-input {
+* {
+    margin:0px;
+    border: 1px solid black;
+    
+}
+label {
     text-transform: uppercase;
 }
+a {
+    color: inherit;
+}
+
 a:visited {
     color: inherit;
     
@@ -8,3 +17,58 @@ a:visited {
 a {
     text-decoration: none;
 }
+body {
+    display: flex;
+}
+.main {
+    flex: 5;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container-bar {
+    box-sizing: border-box;
+    border: 1px solid black;
+    min-height: 100vh;
+    flex: 3;    
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background: #794141;
+}
+.logo {
+    font-size: 5.5rem;
+    margin-top: 20vh;
+
+}
+
+/* 
+
+.credit {
+    bottom: 0px; 
+    text-align: center;
+}
+
+
+.container-form {
+    flex: 1;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+row>div {
+    width: 300px;
+    
+}
+row {
+    width: 1000px;
+}
+input {
+    width: 250px;
+} */
