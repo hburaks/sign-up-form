@@ -1,0 +1,10 @@
+input {
+    text-transform: uppercase;
+}
+a:visited {
+    color: inherit;
+    
+}
+a {
+    text-decoration: none;
+}
