@@ -1,8 +1,18 @@
 * {
     margin:0px;
-    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* box-shadow:0px 0px 0px 1px black  inset; */
+    --left-space: 48px;
     
 }
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf");
+}
+
 label {
     text-transform: uppercase;
 }
@@ -17,18 +27,15 @@ a:visited {
 a {
     text-decoration: none;
 }
-body {
+.content {
     display: flex;
-}
-.main {
-    flex: 5;
     min-height: 100vh;
-    flex-direction: column;
 }
+
 .container-bar {
-    box-sizing: border-box;
+    
     border: 1px solid black;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     flex: 3;    
     justify-content: space-between;
     display: flex;
@@ -36,39 +43,126 @@ body {
     text-align: center;
     color: white;
     background: #794141;
+    background-image: url("./img/cole-keister-nfxIvG2B62I-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
 }
+
 .logo {
     font-size: 5.5rem;
     margin-top: 20vh;
-
+    background-color: rgba(255, 255, 255, 0.247);
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    height: 125px;
+}
+#odinlogo {
+    font-family: "Norse Bold";
 }
 
-/* 
+
 
 .credit {
-    bottom: 0px; 
-    text-align: center;
-}
-
-
-.container-form {
-    flex: 1;
-    border: 1px solid black;
-    flex-wrap: wrap;
-}
-form {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 80%;
-}
-
-row>div {
-    width: 300px;
+    font-size: 0.9rem;
+    padding-bottom: 0.8rem;
     
 }
-row {
-    width: 1000px;
+
+
+.main {
+    flex: 5;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main > p {
+    font-size: 1.4rem;
+    margin-left: var(--left-space);
+    font-weight: bold;
+    max-width: 80%;
+    margin-bottom: 8px;
+    margin-top: 100px;
+}
+ 
+
+.container-form {
+    color: black;
+  
+  margin-top: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: var(--left-space);
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 8px;
+}
+form > p {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin-bottom: 1rem;
+
 }
 input {
-    width: 250px;
-} */
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 6px 8px;
+  width: 100%;
+  font-size:0.8rem;
+  margin-top: 4px;
+  
+}
+form > div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 84px;
+    row-gap: 18px;
+    margin-bottom: 18px;
+}
+
+form > div > div {
+    width: 300px;
+}
+
+button {
+    background-color: #596D48;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    margin-left: var(--left-space);
+    border: 1px white;
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+input#last_name {
+    border: 1px solid blue;
+    box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+input.error {
+    border: 1px solid red;
+}
+.error-message {
+    margin-top: 0;
+    font-size: 0.8rem;
+    color: red;
+}
+ #login {
+    margin-left: var(--left-space);
+    margin-top: 0.6rem;
+    font-weight: 400;
+ }
+ #login > a {
+    color: #596D48;
+    font-weight: bold;
+    
+ }
